@@ -29,6 +29,7 @@ def load_pokemon():
 
     pokemon_information.config(text=f"{pokemon.dex} - {pokemon.name}".title())
     pokemon_types.config(text=" - ".join([t for t in pokemon.types]).title())
+   #Divide Height and Weights by 10 for accurate values vis Bulbapedia
     pokemon_height.config(text=f"{pokemon.height / 10}" + " m")
     pokemon_weight.config(text=f"{pokemon.weight / 10}" + " kilograms")
     
